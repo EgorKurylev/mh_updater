@@ -479,7 +479,7 @@ function imgui.OnDrawFrame()
 		local ex, ey = getScreenResolution()
 		imgui.SetNextWindowPos(imgui.ImVec2(-2 + 1187, ey / 2 + 110), imgui.Cond.FirstUseEver)
 		imgui.SetNextWindowSize(imgui.ImVec2(217, 300), imgui.Cond.FirstUseEver)
-		imgui.Begin(u8'Мульти-чит от Realluz1', MenuWindow, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize)
+		imgui.Begin(u8'Мульти-чит от Realluz', MenuWindow, imgui.WindowFlags.NoCollapse + imgui.WindowFlags.NoResize)
 		if imgui.Button(u8'Читы', imgui.ImVec2(200, 50)) then
 			MenuWindow.v = false
 			MenuCheats.v = true
